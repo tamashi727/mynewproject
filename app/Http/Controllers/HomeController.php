@@ -49,5 +49,26 @@ class HomeController extends Controller
     public function faq(){
         return view('user.faq');
     }
+    public function team(){
+        return view('user.team');
+    }
+    public function teamdetails(){
+        return view('user.teamdetails');
+    }
+    public function whychoose(){
+        return view('user.whychoose');
+    }
+    public function portfolio(){
+        return view('user.portfolio');
+    }
+    public function portfoliodetails(){
+        return view('user.portfoliodetails');
+    }
+    public function news(){
+        return view('user.news');
+    }
+    public function newsdetails(){
+        return view('user.newsdetails');
+    }
 
 }

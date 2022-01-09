@@ -25,6 +25,13 @@ Route::get('/career',[HomeController::class,'career']);
 Route::get('/services',[HomeController::class,'services']);
 Route::get('/servicedetails',[HomeController::class,'servicedetails']);
 Route::get('/faq',[HomeController::class,'faq']);
+Route::get('/team',[HomeController::class,'team']);
+Route::get('/teamdetails',[HomeController::class,'teamdetails']);
+Route::get('/whychoose',[HomeController::class,'whychoose']);
+Route::get('/portfolio',[HomeController::class,'portfolio']);
+Route::get('/portfoliodetails',[HomeController::class,'portfoliodetails']);
+Route::get('/news',[HomeController::class,'news']);
+Route::get('/newsdetails',[HomeController::class,'newsdetails']);
 
 //Route::get('/home',[HomeController::class,'redirect']);
 

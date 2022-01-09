@@ -110,7 +110,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="careers.html" class="job-btn"><i class="fal fa-briefcase"></i> Get Job Feeds</a>
+                            <a href="{{url('career') }}" class="job-btn"><i class="fal fa-briefcase"></i> Get Job Feeds</a>
                         </div>
                      </div>
                  </div>
@@ -138,27 +138,27 @@
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about') }}">About</a></li>
-                                    <li><a href="services.html">Services <span>+</span></a>
+                                    <li><a href="">Services <span>+</span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
+                                            <li><a href="{{url('services') }}">Services</a></li>
+                                            <li><a href="{{url('servicedetails') }}">Service Details</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#0">Pages <span>+</span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="careers.html">Careers</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="why-choose.html">Why Choose</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            <li><a href="{{url('faq') }}">Faq</a></li>
+                                            <li><a href="{{url('career') }}">Careers</a></li>
+                                            <li><a href="{{ url('team') }}">Team</a></li>
+                                            <li><a href="{{ url('teamdetails') }}">Team Details</a></li>
+                                            <li><a href="{{ url('whychoose') }}">Why Choose</a></li>
+                                            <li><a href="{{ url('portfolio') }}">Portfolio</a></li>
+                                            <li><a href="{{ url('portfoliodetails') }}">Portfolio Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <li><a href="{{ url('news') }}">News</a>
                                         <ul class="sub-menu">
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="{{ url('news') }}">News</a></li>
+                                            <li><a href="{{ url('newsdetails') }}">News Details</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -200,7 +200,7 @@
     <!-- header end -->
 
     <!-- banner area start -->
-    <section class="banner__area pt-135 pb-135 bg_img" data-background="assets/images/bg/banner-bg-1.jpg">
+    <section class="banner__area pt-135 pb-135 bg_img" data-background="{{asset('assets/images/bg/banner-bg-1.jpg')}}">
         <div class="banner-wrap">
             <div class="container-fluid">
                 <div class="row">
