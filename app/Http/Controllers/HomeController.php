@@ -70,5 +70,8 @@ class HomeController extends Controller
     public function newsdetails(){
         return view('user.newsdetails');
     }
+    public function ttindex(){
+        return view('user.ttindex');
+    }
 
 }

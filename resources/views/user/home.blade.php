@@ -134,7 +134,7 @@
                                         <ul class="sub-menu">
                                             <li><a href="{{url('/')}}">Homepage 01</a></li>
                                             <li><a href="{{url('indexx')}}">Homepage 02</a></li>
-                                            <li><a href="index">Homepage 03</a></li>
+                                            <li><a href="{{url('ttindex') }}">Homepage 03</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about') }}">About</a></li>
@@ -211,7 +211,7 @@
                             <p>We run all kinds of IT services that vowsuccess</p>
                             <div class="buttons mt-35">
                                 <a href="contact.html" class="site-btn">Get In Touch <span>+</span></a>
-                                <a href="about.html" class="site-btn transparent">Learn More <span>+</span></a>
+                                <a href="{{ url('about') }}" class="site-btn transparent">Learn More <span>+</span></a>
                             </div>
                         </div>
                     </div>
@@ -337,7 +337,7 @@
                                         <div class="col-xl-6 mt-30">
                                             <div class="about__box--item">
                                                 <div class="about__box--icon">
-                                                    <img src="assets/images/icons/about-icon-1.png" alt="">
+                                                    <img src="{{ asset('assets/images/icons/about-icon-1.png')}}" alt="">
                                                 </div>
                                                 <div class="about__box--content">
                                                     <h5 class="about__box--title">Business Idea</h5>
@@ -348,7 +348,7 @@
                                         <div class="col-xl-6 mt-30">
                                             <div class="about__box--item">
                                                 <div class="about__box--icon">
-                                                    <img src="assets/images/icons/about-icon-2.png" alt="">
+                                                    <img src="{{ ('assets/images/icons/about-icon-2.png')}}" alt="">
                                                 </div>
                                                 <div class="about__box--content">
                                                     <h5 class="about__box--title">Move Forward</h5>
@@ -397,7 +397,7 @@
                                 <h4 class="cat-ttile">Management System</h4>
                             </div>
                             <p>We seamlessly merge two key components – economics and information technology. This is the main actual fact.</p>
-                            <a href="service-details.html" class="inline-btn">Read More</a>
+                            <a href="{{url('servicedetails') }}" class="inline-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -418,7 +418,7 @@
                                 <h4 class="cat-ttile">Database Security</h4>
                             </div>
                             <p>We seamlessly merge two key components – economics and information technology. This is the main actual fact.</p>
-                            <a href="service-details.html" class="inline-btn">Read More</a>
+                            <a href="{{url('servicedetails') }}" class="inline-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -439,7 +439,7 @@
                                 <h4 class="cat-ttile">Multifuction Technology</h4>
                             </div>
                             <p>We seamlessly merge two key components – economics and information technology. This is the main actual fact.</p>
-                            <a href="service-details.html" class="inline-btn">Read More</a>
+                            <a href="{{url('servicedetails') }}" class="inline-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +449,7 @@
     <!-- why choose area end -->
 
     <!-- video section area start -->
-    <section class="video__area bg_img pt-100 pb-130" data-background="assets/images/bg/video-bg.jpeg">
+    <section class="video__area bg_img pt-100 pb-130" data-background="{{ asset('assets/images/bg/video-bg.jpeg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-8">
@@ -598,7 +598,7 @@
                             sint occaecat cupidatat non proident.</p>
                             <div class="authore mt-25 d-flex align-items-center">
                                 <div class="authore--thumb mr-20">
-                                    <img src="assets/images/others/testimonial-authore-1.png" alt="">
+                                    <img src="{{asset('assets/images/others/testimonial-authore-1.png')}}" alt="">
                                 </div>
                                 <div class="authore--content">
                                     <h5 class="name">Rosalina D. William</h5>
@@ -658,7 +658,7 @@
                                                 <li><a href="#0"><i class="fa fa-calendar-alt"></i> 24th June 2020</a></li>
                                                 <li><a href="#0"><i class="fa fa-user"></i> By Admin</a></li>
                                             </ul>
-                                            <h4 class="title"><a href="news-details.html">We are specialists in both economics
+                                            <h4 class="title"><a href="{{ url('newsdetails') }}">We are specialists in both economics
                                                     and information technologies.</a></h4>
                                         </div>
                                     </div>
@@ -677,7 +677,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
-                    <a href="index.html" class="site-logo mb-50">
+                    <a href="{{url('/')}}" class="site-logo mb-50">
                         <img src="{{asset('assets/images/logo/logo.png')}}" alt="Logo">
                     </a>
                 </div>
@@ -725,19 +725,19 @@
                         <div class="row no-gutters">
                             <div class="col">
                                 <ul>
-                                    <li><a href="service-details.html">IT Software</a></li>
-                                    <li><a href="service-details.html">IT Support</a></li>
-                                    <li><a href="service-details.html">IT Platforms</a></li>
-                                    <li><a href="service-details.html">Cloud Computing</a></li>
-                                    <li><a href="service-details.html">Cyber Security</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cyber Security</a></li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul>
-                                    <li><a href="service-details.html">IT Software</a></li>
-                                    <li><a href="service-details.html">IT Support</a></li>
-                                    <li><a href="service-details.html">IT Platforms</a></li>
-                                    <li><a href="service-details.html">Cloud Computing</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -761,7 +761,7 @@
                             <li><a href="#0">Forum Support</a></li>
                             <li><a href="#0">Help & FAQ</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="services.html">Pricing and plans</a></li>
+                            <li><a href="{{url('services') }}">Pricing and plans</a></li>
                             <li><a href="#0">Cookies Policy</a></li>
                         </ul>
                     </div>
@@ -778,7 +778,7 @@
                                     <ul class="meta">
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
-                                    <h4 class="title"><a href="news-details.html">We are specialists in both
+                                    <h4 class="title"><a href="{{ url('newsdetails') }}">We are specialists in both
                                     economics and information</a></h4>
                                 </div>
                             </div>
@@ -790,7 +790,7 @@
                                     <ul class="meta">
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
-                                    <h4 class="title"><a href="news-details.html">We are specialists in both
+                                    <h4 class="title"><a href="{{ url('newsdetails') }}">We are specialists in both
                                     economics and information</a></h4>
                                 </div>
                             </div>

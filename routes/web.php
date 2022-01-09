@@ -20,6 +20,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class,'index']);
 Route::get('/indexx',[HomeController::class,'indexx']);
+Route::get('/ttindex',[HomeController::class,'ttindex']);
 Route::get('/about',[HomeController::class,'about']);
 Route::get('/career',[HomeController::class,'career']);
 Route::get('/services',[HomeController::class,'services']);
@@ -33,7 +34,7 @@ Route::get('/portfoliodetails',[HomeController::class,'portfoliodetails']);
 Route::get('/news',[HomeController::class,'news']);
 Route::get('/newsdetails',[HomeController::class,'newsdetails']);
 
-//Route::get('/home',[HomeController::class,'redirect']);
+Route::get('/home',[HomeController::class,'redirect']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

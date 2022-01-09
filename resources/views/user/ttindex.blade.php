@@ -461,8 +461,8 @@
                 <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mt-30">
                     <div class="support__box">
                         <div class="icon">
-                            <img src="{{asset('assets/images/icons/support-icon-2.png')" class="default" alt="">
-                            <img src="{}assets/images/icons/support-icon-h-2.png" class="hover" alt="">
+                            <img src="{{asset('assets/images/icons/support-icon-2.png')}}" class="default" alt="">
+                            <img src="{{asset('assets/images/icons/support-icon-h-2.png')}}" class="hover" alt="">
                         </div>
                         <div class="content">
                             <h2 class="title mb-15">Our Values</h2>
@@ -473,8 +473,8 @@
                 <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mt-30">
                     <div class="support__box">
                         <div class="icon">
-                            <img src="assets/images/icons/support-icon-3.png" class="default" alt="">
-                            <img src="assets/images/icons/support-icon-h-3.png" class="hover" alt="">
+                            <img src="{{asset ('assets/images/icons/support-icon-3.png')}}" class="default" alt="">
+                            <img src="{{asset ('assets/images/icons/support-icon-h-3.png')}}" class="hover" alt="">
                         </div>
                         <div class="content">
                             <h2 class="title mb-15">Our Resources</h2>
@@ -485,8 +485,8 @@
                 <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mt-30">
                     <div class="support__box">
                         <div class="icon">
-                            <img src="assets/images/icons/support-icon-4.png" class="default" alt="">
-                            <img src="assets/images/icons/support-icon-h-4.png" class="hover" alt="">
+                            <img src="{{asset ('assets/images/icons/support-icon-4.png')}}" class="default" alt="">
+                            <img src="{{asset ('assets/images/icons/support-icon-h-4.png')}}" class="hover" alt="">
                         </div>
                         <div class="content">
                             <h2 class="title mb-15">Growth Process</h2>
@@ -497,8 +497,8 @@
                 <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mt-30">
                     <div class="support__box">
                         <div class="icon">
-                            <img src="assets/images/icons/support-icon-5.png" class="default" alt="">
-                            <img src="assets/images/icons/support-icon-h-5.png" class="hover" alt="">
+                            <img src="{{asset ('assets/images/icons/support-icon-5.png')}}" class="default" alt="">
+                            <img src="{{ asset('assets/images/icons/support-icon-h-5.png')}}" class="hover" alt="">
                         </div>
                         <div class="content">
                             <h2 class="title mb-15">Our Support</h2>
@@ -528,7 +528,7 @@
                     <div class="team-carousel owl-carousel">
                         <div class="team__box">
                             <div class="thumb">
-                                <img src="assets/images/team/team-1.jpeg" alt="">
+                                <img src="{{ asset('assets/images/team/team-1.jpeg')}}" alt="">
                                 <div class="social__icons">
                                     <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -544,7 +544,7 @@
                         </div>
                         <div class="team__box">
                             <div class="thumb">
-                                <img src="assets/images/team/team-2.jpeg" alt="">
+                                <img src="{{asset('assets/images/team/team-2.jpeg')}}" alt="">
                                 <div class="social__icons">
                                     <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -560,7 +560,7 @@
                         </div>
                         <div class="team__box">
                             <div class="thumb">
-                                <img src="assets/images/team/team-3.jpeg" alt="">
+                                <img src="{{asset('assets/images/team/team-3.jpeg')}}" alt="">
                                 <div class="social__icons">
                                     <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -576,7 +576,7 @@
                         </div>
                         <div class="team__box">
                             <div class="thumb">
-                                <img src="assets/images/team/team-4.jpeg" alt="">
+                                <img src="{{asset('assets/images/team/team-4.jpeg')}}" alt="">
                                 <div class="social__icons">
                                     <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -592,7 +592,7 @@
                         </div>
                         <div class="team__box">
                             <div class="thumb">
-                                <img src="assets/images/team/team-1.jpeg" alt="">
+                                <img src="{{asset('assets/images/team/team-1.jpeg')}}" alt="">
                                 <div class="social__icons">
                                     <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -614,7 +614,7 @@
     <!-- tema area end -->
 
     <!-- cta area start -->
-    <section class="cta__area cta__area--2 pt-75 pb-75 bg_img" data-background="assets/images/bg/cta-bg-2.jpeg" data-overlay="dark" data-opacity="7">
+    <section class="cta__area cta__area--2 pt-75 pb-75 bg_img" data-background="{{asset('assets/images/bg/cta-bg-2.jpeg')}}" data-overlay="dark" data-opacity="7">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -656,14 +656,14 @@
                                 aute irure dolor in reprehenderit.</p>
                             <div class="authore mt-35 d-flex align-items-center">
                                 <div class="authore--thumb mr-20">
-                                    <img src="assets/images/others/testimonial-authore-1.png" alt="">
+                                    <img src="{{asset('assets/images/others/testimonial-authore-1.png')}}" alt="">
                                 </div>
                                 <div class="authore--content">
                                     <h5 class="name">Rosalina D. William</h5>
                                     <span class="designatin">Founder, Romada Co.</span>
                                 </div>
                             </div>
-                            <img src="assets/images/icons/quote.png" alt="" class="quote-icon">
+                            <img src="{{asset('assets/images/icons/quote.png')}}" alt="" class="quote-icon">
                         </div>
                         <div class="testimonial">
                             <h4 class="title mb-25">Great Quality Software</h4>
@@ -673,14 +673,14 @@
                                 aute irure dolor in reprehenderit.</p>
                             <div class="authore mt-35 d-flex align-items-center">
                                 <div class="authore--thumb mr-20">
-                                    <img src="assets/images/others/testimonial-authore-1.png" alt="">
+                                    <img src="{{asset('assets/images/others/testimonial-authore-1.png')}}" alt="">
                                 </div>
                                 <div class="authore--content">
                                     <h5 class="name">Rosalina D. William</h5>
                                     <span class="designatin">Founder, Romada Co.</span>
                                 </div>
                             </div>
-                            <img src="assets/images/icons/quote.png" alt="" class="quote-icon">
+                            <img src="{{asset('assets/images/icons/quote.png')}}" alt="" class="quote-icon">
                         </div>
                         <div class="testimonial">
                             <h4 class="title mb-25">Great Quality Software</h4>
@@ -690,14 +690,14 @@
                                 aute irure dolor in reprehenderit.</p>
                             <div class="authore mt-35 d-flex align-items-center">
                                 <div class="authore--thumb mr-20">
-                                    <img src="assets/images/others/testimonial-authore-1.png" alt="">
+                                    <img src="{{asset('assets/images/others/testimonial-authore-1.png')}}" alt="">
                                 </div>
                                 <div class="authore--content">
                                     <h5 class="name">Rosalina D. William</h5>
                                     <span class="designatin">Founder, Romada Co.</span>
                                 </div>
                             </div>
-                            <img src="assets/images/icons/quote.png" alt="" class="quote-icon">
+                            <img src="{{asset('assets/images/icons/quote.png')}}" alt="" class="quote-icon">
                         </div>
                         <div class="testimonial">
                             <h4 class="title mb-25">Great Quality Software</h4>
@@ -706,14 +706,14 @@
                             aute irure dolor in reprehenderit.</p>
                             <div class="authore mt-35 d-flex align-items-center">
                                 <div class="authore--thumb mr-20">
-                                    <img src="assets/images/others/testimonial-authore-1.png" alt="">
+                                    <img src="{{asset('assets/images/others/testimonial-authore-1.png')}}" alt="">
                                 </div>
                                 <div class="authore--content">
                                     <h5 class="name">Rosalina D. William</h5>
                                     <span class="designatin">Founder, Romada Co.</span>
                                 </div>
                             </div>
-                            <img src="assets/images/icons/quote.png" alt="" class="quote-icon">
+                            <img src="{{asset('assets/images/icons/quote.png')}}" alt="" class="quote-icon">
                         </div>
                     </div>
                 </div>
@@ -778,7 +778,7 @@
                 <div class="col-xl-6">
                     <article class="blog__box blog__box--2">
                         <div class="thumb">
-                            <img src="assets/images/news/news-big-1.jpeg" alt="">
+                            <img src="{{ asset('assets/images/news/news-big-1.jpeg')}}" alt="">
                         </div>
                         <div class="content">
                             <span class="cat">// it solutions</span>
@@ -789,7 +789,7 @@
                             <div class="meta">
                                 <div class="authore">
                                     <div class="authore__thumb">
-                                        <img src="assets/images/news/news-authore-2.png" alt="">
+                                        <img src="{{asset ('assets/images/news/news-authore-2.png')}}" alt="">
                                     </div>
                                     <div class="authore__content">
                                         <h5>By Admin</h5>
@@ -807,7 +807,7 @@
                         <div class="news__items mt-none-30">
                             <div class="news__item mt-30">
                                 <div class="thumb">
-                                    <img src="assets/images/news/news-small-1.jpeg" alt="">
+                                    <img src="{{asset ('assets/images/news/news-small-1.jpeg')}}" alt="">
                                 </div>
                                 <div class="content">
                                     <ul class="meta">
@@ -820,7 +820,7 @@
                             </div>
                             <div class="news__item mt-30">
                                 <div class="thumb">
-                                    <img src="assets/images/news/news-small-2.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/news/news-small-2.jpeg')}}" alt="">
                                 </div>
                                 <div class="content">
                                     <ul class="meta">
@@ -833,7 +833,7 @@
                             </div>
                             <div class="news__item mt-30">
                                 <div class="thumb">
-                                    <img src="assets/images/news/news-small-5.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/news/news-small-5.jpeg')}}" alt="">
                                 </div>
                                 <div class="content">
                                     <ul class="meta">
@@ -846,7 +846,7 @@
                             </div>
                             <div class="news__item mt-30">
                                 <div class="thumb">
-                                    <img src="assets/images/news/news-small-6.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/news/news-small-6.jpeg')}}" alt="">
                                 </div>
                                 <div class="content">
                                     <ul class="meta">
