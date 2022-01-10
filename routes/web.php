@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,9 @@ Route::get('/portfolio',[HomeController::class,'portfolio']);
 Route::get('/portfoliodetails',[HomeController::class,'portfoliodetails']);
 Route::get('/news',[HomeController::class,'news']);
 Route::get('/newsdetails',[HomeController::class,'newsdetails']);
+
+Route::get('/contactus',[ContactController::class,'contact']);
+Route::post('/send-message',[ContactController::class,'sendEmail'])->name('contact.send');
 
 Route::get('/home',[HomeController::class,'redirect']);
 
