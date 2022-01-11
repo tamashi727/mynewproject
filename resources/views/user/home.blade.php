@@ -161,7 +161,7 @@
                                             <li><a href="{{ url('newsdetails') }}">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('contactus')}}">Contact</a></li>
                                     @if(Route::has('login'))
                                     @auth
                                     <x-app-layout>
@@ -210,7 +210,7 @@
                             <h1 class="heading">Advanced <br>Innovative <br>IT Solutions<span>.</span></h1>
                             <p>We run all kinds of IT services that vowsuccess</p>
                             <div class="buttons mt-35">
-                                <a href="contact.html" class="site-btn">Get In Touch <span>+</span></a>
+                                <a href="{{url('contactus')}}" class="site-btn">Get In Touch <span>+</span></a>
                                 <a href="{{ url('about') }}" class="site-btn transparent">Learn More <span>+</span></a>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                         <div class="row justify-content-end">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="about__bg">
-                                    <img src="assets/images/bg/about-bg-1.jpeg" alt="">
+                                    <img src="{{asset('assets/images/bg/about-bg-1.jpeg')}}" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 mt-30">
@@ -477,7 +477,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="contact.html" class="site-btn">Get Started Now <span>+ </span></a>
+                        <a href="{{url('contactus')}}" class="site-btn">Get Started Now <span>+ </span></a>
                     </div>
                 </div>
                 <div class="col-xl-2 offset-xl-2 offset-lg-1 col-lg-3 align-self-center video-btn-wrap">
@@ -760,7 +760,7 @@
                         <ul>
                             <li><a href="#0">Forum Support</a></li>
                             <li><a href="#0">Help & FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="{{url('contactus')}}">Contact Us</a></li>
                             <li><a href="{{url('services') }}">Pricing and plans</a></li>
                             <li><a href="#0">Cookies Policy</a></li>
                         </ul>
