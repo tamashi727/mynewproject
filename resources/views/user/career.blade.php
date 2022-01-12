@@ -129,7 +129,7 @@
                          <div class="header__menu">
                              <nav id="mobile-menu">
                                  <ul>
-                                     <li><a href="">Home <span>+</span></a>
+                                     <li><a href="{{url('/')}}">Home <span>+</span></a>
                                          <ul class="sub-menu">
                                              <li><a href="{{url('/')}}">Homepage 02</a></li>
                                              <li><a href="{{url('indexx')}}">Homepage 02</a></li>

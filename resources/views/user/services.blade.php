@@ -110,7 +110,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="careers.html" class="job-btn"><i class="fal fa-briefcase"></i> Get Job Feeds</a>
+                            <a href="{{url('career') }}" class="job-btn"><i class="fal fa-briefcase"></i> Get Job Feeds</a>
                         </div>
                      </div>
                  </div>
@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
                         <div class="header__logo">
-                            <a href="index.html">
+                            <a href="{{url('/') }}">
                                 <img src="{{asset('assets/images/logo/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -130,38 +130,38 @@
                         <div class="header__menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="index.html">Home <span>+</span></a>
+                                    <li><a href="{{url('/')}}">Home <span>+</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="{{url('/')}}">Homepage 01</a></li>
                                             <li><a href="{{url('indexx')}}">Homepage 02</a></li>
-                                            <li><a href="index-03.html">Homepage 03</a></li>
+                                            <li><a href="{{url('ttindex') }}">Homepage 03</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about') }}">About</a></li>
-                                    <li><a href="services.html">Services <span>+</span></a>
+                                    <li><a href="{{url('services') }}">Services <span>+</span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
+                                            <li><a href="{{url('services') }}">Services</a></li>
+                                            <li><a href="{{url('servicedetails') }}">Service Details</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#0">Pages <span>+</span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="careers.html">Careers</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="why-choose.html">Why Choose</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            <li><a href="{{url('faq') }}">Faq</a></li>
+                                            <li><a href="{{url('career') }}">Careers</a></li>
+                                            <li><a href="{{ url('team') }}">Team</a></li>
+                                            <li><a href="{{ url('teamdetails') }}">Team Details</a></li>
+                                            <li><a href="{{ url('whychoose') }}">Why Choose</a></li>
+                                            <li><a href="{{ url('portfolio') }}">Portfolio</a></li>
+                                            <li><a href="{{ url('portfoliodetails') }}">Portfolio Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <li><a href="{{url('news') }}">News</a>
                                         <ul class="sub-menu">
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="{{url('news') }}">News</a></li>
+                                            <li><a href="{{url('newsdetails') }}">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('contactus') }}">Contact</a></li>
                                     @if(Route::has('login'))
                                     @auth
                                     <x-app-layout>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
                         <div class="navarea__right">
-                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <a href="{{url('contactus') }}" class="site-btn">Get A Quote <span>+</span></a>
                             <button class="search-trigger">
                                 <i class="fal fa-search"></i>
                             </button>
@@ -210,7 +210,7 @@
                         <div class="breadcrumb__nav">
                             <ul>
                                 <li><span>//</span></li>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="{{url('/') }}">Home</a></li>
                                 <li>|</li>
                                 <li>Services</li>
                             </ul>
@@ -235,7 +235,7 @@
                             <h2 class="title mb-15">Managed IT services</h2>
                             <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                         </div>
-                        <a href="service-details.html" class="inline-btn mt-15">Read More</a>
+                        <a href="{{url('servicedetails') }}" class="inline-btn mt-15">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 mt-30 text-center">
@@ -247,7 +247,7 @@
                             <h2 class="title mb-15">Backup and Recovery</h2>
                             <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                         </div>
-                        <a href="service-details.html" class="inline-btn mt-15">Read More</a>
+                        <a href="{{url('servicedetails') }}" class="inline-btn mt-15">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 mt-30 text-center">
@@ -259,7 +259,7 @@
                             <h2 class="title mb-15">Cyber Security</h2>
                             <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                         </div>
-                        <a href="service-details.html" class="inline-btn mt-15">Read More</a>
+                        <a href="{{url('servicedetails') }}" class="inline-btn mt-15">Read More</a>
                     </div>
                 </div>
             </div>
@@ -437,7 +437,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 text-right">
-                    <a href="contact.html" class="site-btn mt-95">Get Started Now <span>+</span></a>
+                    <a href="{{url('contactus') }}" class="site-btn mt-95">Get Started Now <span>+</span></a>
                 </div>
             </div>
         </div>
@@ -448,7 +448,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center">
-                <a href="index.html" class="site-logo mb-50">
+                <a href="{{url('/') }}" class="site-logo mb-50">
                     <img src="{{asset('assets/images/logo/logo.png')}}" alt="Logo">
                 </a>
             </div>
@@ -496,19 +496,19 @@
                     <div class="row no-gutters">
                         <div class="col">
                             <ul>
-                                <li><a href="service-details.html">IT Software</a></li>
-                                <li><a href="service-details.html">IT Support</a></li>
-                                <li><a href="service-details.html">IT Platforms</a></li>
-                                <li><a href="service-details.html">Cloud Computing</a></li>
-                                <li><a href="service-details.html">Cyber Security</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cyber Security</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul>
-                                <li><a href="service-details.html">IT Software</a></li>
-                                <li><a href="service-details.html">IT Support</a></li>
-                                <li><a href="service-details.html">IT Platforms</a></li>
-                                <li><a href="service-details.html">Cloud Computing</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -531,8 +531,8 @@
                     <ul>
                         <li><a href="#0">Forum Support</a></li>
                         <li><a href="#0">Help & FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="services.html">Pricing and plans</a></li>
+                        <li><a href="{{url('contactus') }}">Contact Us</a></li>
+                        <li><a href="{{url('services') }}">Pricing and plans</a></li>
                         <li><a href="#0">Cookies Policy</a></li>
                     </ul>
                 </div>
@@ -549,7 +549,7 @@
                                 <ul class="meta">
                                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                 </ul>
-                                <h4 class="title"><a href="news-details.html">We are specialists in both
+                                <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                 economics and information</a></h4>
                             </div>
                         </div>
@@ -561,7 +561,7 @@
                                 <ul class="meta">
                                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                 </ul>
-                                <h4 class="title"><a href="news-details.html">We are specialists in both
+                                <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                 economics and information</a></h4>
                             </div>
                         </div>

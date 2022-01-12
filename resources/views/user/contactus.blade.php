@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
                         <div class="header__logo">
-                            <a href="index.html">
+                            <a href="{{url('/')}}">
                                 <img src="{{asset('assets/images/logo/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -130,11 +130,11 @@
                         <div class="header__menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="index.html">Home <span>+</span></a>
+                                    <li><a href="{{url('/')}}">Home <span>+</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="{{url('/')}}">Homepage 01</a></li>
                                             <li><a href="{{url('indexx')}}">Homepage 02</a></li>
-                                            <li><a href="index-03.html">Homepage 03</a></li>
+                                            <li><a href="{{url('ttindex')}}">Homepage 03</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about')}}">About</a></li>
@@ -148,20 +148,20 @@
                                         <ul class="sub-menu">
                                             <li><a href="{{url('faq')}}">Faq</a></li>
                                             <li><a href="{{url('career')}}">Careers</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="why-choose.html">Why Choose</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            <li><a href="{{url('team')}}">Team</a></li>
+                                            <li><a href="{{url('teamdetails')}}">Team Details</a></li>
+                                            <li><a href="{{url('whychoose')}}">Why Choose</a></li>
+                                            <li><a href="{{url('portfolio')}}">Portfolio</a></li>
+                                            <li><a href="{{url('portfoliodetails')}}">Portfolio Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <li><a href="{{url('news')}}">News</a>
                                         <ul class="sub-menu">
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="{{url('news')}}">News</a></li>
+                                            <li><a href="{{url('newsdetails')}}">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('contactus')}}">Contact</a></li>
                                     @if(Route::has('login'))
                                     @auth
                                     <x-app-layout>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
                         <div class="navarea__right">
-                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <a href="{{url('contactus')}}" class="site-btn">Get A Quote <span>+</span></a>
                             <button class="search-trigger">
                                 <i class="fal fa-search"></i>
                             </button>
@@ -209,7 +209,7 @@
                         <div class="breadcrumb__nav">
                             <ul>
                                 <li><span>//</span></li>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="{{url('/')}}">Home</a></li>
                                 <li>|</li>
                                 <li>Contact</li>
                             </ul>
@@ -425,7 +425,7 @@
                         <ul>
                             <li><a href="#0">Forum Support</a></li>
                             <li><a href="#0">Help & FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="{{url('contactus')}}">Contact Us</a></li>
                             <li><a href="{{url('services') }}">Pricing and plans</a></li>
                             <li><a href="#0">Cookies Policy</a></li>
                         </ul>

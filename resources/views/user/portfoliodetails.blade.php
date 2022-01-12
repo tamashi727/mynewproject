@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
                         <div class="header__logo">
-                            <a href="index.html">
+                            <a href="{{url('/') }}">
                                 <img src="{{asset('assets/images/logo/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -130,15 +130,15 @@
                         <div class="header__menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="index.html">Home <span>+</span></a>
+                                    <li><a href="{{url('/') }}">Home <span>+</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="{{url('/')}}">Homepage 01</a></li>
                                             <li><a href="{{url('indexx')}}">Homepage 02</a></li>
-                                            <li><a href="index">Homepage 03</a></li>
+                                            <li><a href="{{url('ttindex') }}">Homepage 03</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about') }}">About</a></li>
-                                    <li><a href="">Services <span>+</span></a>
+                                    <li><a href="{{url('services') }}">Services <span>+</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="{{url('services') }}">Services</a></li>
                                             <li><a href="{{url('servicedetails') }}">Service Details</a></li>
@@ -152,16 +152,16 @@
                                             <li><a href="{{ url('teamdetails') }}">Team Details</a></li>
                                             <li><a href="{{ url('whychoose') }}">Why Choose</a></li>
                                             <li><a href="{{ url('portfolio') }}">Portfolio</a></li>
-                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            <li><a href="{{url('portfoliodetails') }}">Portfolio Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <li><a href="{{url('news') }}">News</a>
                                         <ul class="sub-menu">
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="{{url('news') }}">News</a></li>
+                                            <li><a href="{{url('newsdetails') }}">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('contactus') }}">Contact</a></li>
                                     @if(Route::has('login'))
                                     @auth
                                     <x-app-layout>
@@ -209,7 +209,7 @@
                  <div class="breadcrumb__nav">
                      <ul>
                          <li><span>//</span></li>
-                         <li><a href="index.html">Home</a></li>
+                         <li><a href="{{url('/') }}">Home</a></li>
                          <li>|</li>
                          <li>Details</li>
                      </ul>
@@ -236,7 +236,7 @@
                                  <li><span>Date:</span> 24th March 2020</li>
                                  <li><span>Budget:</span> $24k</li>
                              </ul>
-                             <a href="about.html" class="site-btn mt-35">Learn More <span>+</span></a>
+                             <a href="{{url('about') }}" class="site-btn mt-35">Learn More <span>+</span></a>
                          </div>
                      </div>
                  </div>
@@ -595,19 +595,19 @@
                     <div class="row no-gutters">
                         <div class="col">
                             <ul>
-                                <li><a href="service-details.html">IT Software</a></li>
-                                <li><a href="service-details.html">IT Support</a></li>
-                                <li><a href="service-details.html">IT Platforms</a></li>
-                                <li><a href="service-details.html">Cloud Computing</a></li>
-                                <li><a href="service-details.html">Cyber Security</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cyber Security</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul>
-                                <li><a href="service-details.html">IT Software</a></li>
-                                <li><a href="service-details.html">IT Support</a></li>
-                                <li><a href="service-details.html">IT Platforms</a></li>
-                                <li><a href="service-details.html">Cloud Computing</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -630,8 +630,8 @@
                     <ul>
                         <li><a href="#0">Forum Support</a></li>
                         <li><a href="#0">Help & FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="services.html">Pricing and plans</a></li>
+                        <li><a href="{{url('contactus') }}">Contact Us</a></li>
+                        <li><a href="{{url('services') }}">Pricing and plans</a></li>
                         <li><a href="#0">Cookies Policy</a></li>
                     </ul>
                 </div>
@@ -648,7 +648,7 @@
                                 <ul class="meta">
                                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                 </ul>
-                                <h4 class="title"><a href="news-details.html">We are specialists in both
+                                <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                 economics and information</a></h4>
                             </div>
                         </div>
@@ -660,7 +660,7 @@
                                 <ul class="meta">
                                     <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                 </ul>
-                                <h4 class="title"><a href="news-details.html">We are specialists in both
+                                <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                 economics and information</a></h4>
                             </div>
                         </div>

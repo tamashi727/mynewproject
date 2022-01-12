@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
                         <div class="header__logo">
-                            <a href="index.html">
+                            <a href="{{url('/') }}">
                                 <img src="{{asset('assets/images/logo/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -130,11 +130,11 @@
                         <div class="header__menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="index.html">Home <span>+</span></a>
+                                    <li><a href="{{url('/') }}">Home <span>+</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="{{url('/')}}">Homepage 01</a></li>
                                             <li><a href="{{url('indexx')}}">Homepage 02</a></li>
-                                            <li><a href="index">Homepage 03</a></li>
+                                            <li><a href="{{url('ttindex')}}">Homepage 03</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('about') }}">About</a></li>
@@ -158,10 +158,11 @@
                                     <li><a href="{{ url('news') }}">News</a>
                                         <ul class="sub-menu">
                                             <li><a href="{{ url('news') }}">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="{{url('newsdetails') }}">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('contactus')}}">Contact</a></li>
+                                    
                                     @if(Route::has('login'))
                                     @auth
                                     <x-app-layout>
@@ -187,7 +188,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
                         <div class="navarea__right">
-                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <a href="{{url('contactus')}}" class="site-btn">Get A Quote <span>+</span></a>
                             <button class="search-trigger">
                                 <i class="fal fa-search"></i>
                             </button>
@@ -211,7 +212,7 @@
                         <div class="breadcrumb__nav">
                             <ul>
                                 <li><span>//</span></li>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="{{url('/') }}">Home</a></li>
                                 <li>|</li>
                                 <li>blog Details</li>
                             </ul>
@@ -397,7 +398,7 @@
                                 </div>
                                 <div class="col-xl-2 col-lg-2 col-md-2 my-auto">
                                     <div class="bakix-filter text-left text-md-center mb-30">
-                                        <a href="#0"><img src="assets/images/icons/filter.png" alt=""></a>
+                                        <a href="#0"><img src="{{ ('assets/images/icons/filter.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-xl-5 col-lg-5 col-md-5">
@@ -606,7 +607,7 @@
                             <ul class="recent-posts">
                                 <li>
                                     <div class="thumb">
-                                        <a href="news-details.html"><img
+                                        <a href="{{url('newsdetails') }}"><img
                                                 src="{{asset('assets/images/news/news-releted-post-1.jpeg')}}" alt=""></a>
                                     </div>
                                     <div class="content">
@@ -617,7 +618,7 @@
                                 </li>
                                 <li>
                                     <div class="thumb">
-                                        <a href="news-details.html"><img
+                                        <a href="{{url('newsdetails') }}"><img
                                                 src="{{asset('assets/images/news/news-releted-post-2.jpeg')}}" alt=""></a>
                                     </div>
                                     <div class="content">
@@ -628,7 +629,7 @@
                                 </li>
                                 <li>
                                     <div class="thumb">
-                                        <a href="news-details.html"><img
+                                        <a href="{{url('newsdetails') }}"><img
                                                 src="{{asset('assets/images/news/news-releted-post-3.jpeg')}}" alt=""></a>
                                     </div>
                                     <div class="content">
@@ -639,7 +640,7 @@
                                 </li>
                                 <li>
                                     <div class="thumb">
-                                        <a href="news-details.html"><img
+                                        <a href="{{url('newsdetails') }}"><img
                                                 src="{{asset('assets/images/news/news-releted-post-4.jpeg')}}" alt=""></a>
                                     </div>
                                     <div class="content">
@@ -826,19 +827,19 @@
                         <div class="row no-gutters">
                             <div class="col">
                                 <ul>
-                                    <li><a href="service-details.html">IT Software</a></li>
-                                    <li><a href="service-details.html">IT Support</a></li>
-                                    <li><a href="service-details.html">IT Platforms</a></li>
-                                    <li><a href="service-details.html">Cloud Computing</a></li>
-                                    <li><a href="service-details.html">Cyber Security</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cyber Security</a></li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul>
-                                    <li><a href="service-details.html">IT Software</a></li>
-                                    <li><a href="service-details.html">IT Support</a></li>
-                                    <li><a href="service-details.html">IT Platforms</a></li>
-                                    <li><a href="service-details.html">Cloud Computing</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Software</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Support</a></li>
+                                    <li><a href="{{url('servicedetails') }}">IT Platforms</a></li>
+                                    <li><a href="{{url('servicedetails') }}">Cloud Computing</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -861,8 +862,8 @@
                         <ul>
                             <li><a href="#0">Forum Support</a></li>
                             <li><a href="#0">Help & FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="services.html">Pricing and plans</a></li>
+                            <li><a href="{{url('contactus') }}">Contact Us</a></li>
+                            <li><a href="{{url('services') }}">Pricing and plans</a></li>
                             <li><a href="#0">Cookies Policy</a></li>
                         </ul>
                     </div>
@@ -879,7 +880,7 @@
                                     <ul class="meta">
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
-                                    <h4 class="title"><a href="news-details.html">We are specialists in both
+                                    <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                     economics and information</a></h4>
                                 </div>
                             </div>
@@ -891,7 +892,7 @@
                                     <ul class="meta">
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
-                                    <h4 class="title"><a href="news-details.html">We are specialists in both
+                                    <h4 class="title"><a href="{{url('newsdetails') }}">We are specialists in both
                                     economics and information</a></h4>
                                 </div>
                             </div>
