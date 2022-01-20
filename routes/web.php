@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\DashboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,7 @@ use App\Http\Controllers\ContactController;
 //Route::get('/', function () {
    // return view('welcome');
 //});
+
 
 Route::get('/',[HomeController::class,'index']);
 Route::get('/indexx',[HomeController::class,'indexx']);
@@ -43,3 +46,8 @@ Route::get('/home',[HomeController::class,'redirect']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/users',[DashboardController::class,'users']);
+Route::get('/view-users/{id}',[DashboardController::class,'viewusers']);
+
+

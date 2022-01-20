@@ -5,7 +5,10 @@
 @section('content')
 <div class="card">
     <div class="card-body">
-        <h1>Me color</h1>
+        <a href="{{ url('users') }}" >Click Here To See Users List
+    
+        </a>
+        
     </div>
 </div>
 
