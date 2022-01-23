@@ -1,6 +1,6 @@
 
 <!-- Topbar Start -->
-<div class="navbar-custom " style="margin-bottom:400px">
+<div class="navbar-custom " style="margin-bottom:500px;background-color:#fff">
   
   <ul class= "navbar-nav  justify-content-end">
     <li class="nav-item dropdown">
