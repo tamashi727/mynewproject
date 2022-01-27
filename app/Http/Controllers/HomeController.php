@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Bannerimage;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,8 @@ class HomeController extends Controller
         if(Auth::id()){
             if(Auth::user()->usertype=='0')
             {
-                return view('user.home');
+                $bannerimage=bannerimage::all();
+                return view('user.home',compact('bannerimage'));
 
             }
             else
@@ -29,49 +31,64 @@ class HomeController extends Controller
         }
     }
     public function index(){
-        return view('user.home');
+        $bannerimage=bannerimage::all();
+        return view('user.home',compact('bannerimage'));
     }
     public function indexx(){
-        return view('user.anindex');
+        $bannerimage=bannerimage::all();
+        return view('user.anindex',compact('bannerimage'));
     }
     public function about(){
-        return view('user.about');
+        $bannerimage=bannerimage::all();
+        return view('user.about',compact('bannerimage'));
     }
     public function career(){
-        return view('user.career');
+        $bannerimage=bannerimage::all();
+        return view('user.career',compact('bannerimage'));
     }
     public function services(){
-        return view('user.services');
+        $bannerimage=bannerimage::all();
+        return view('user.services',compact('bannerimage'));
     }
     public function servicedetails(){
-        return view('user.servicedetails');
+        $bannerimage=bannerimage::all();
+        return view('user.servicedetails',compact('bannerimage'));
     }
     public function faq(){
-        return view('user.faq');
+        $bannerimage=bannerimage::all();
+        return view('user.faq',compact('bannerimage'));
     }
     public function team(){
-        return view('user.team');
+        $bannerimage=bannerimage::all();
+        return view('user.team',compact('bannerimage'));
     }
     public function teamdetails(){
-        return view('user.teamdetails');
+        $bannerimage=bannerimage::all();
+        return view('user.teamdetails',compact('bannerimage'));
     }
     public function whychoose(){
-        return view('user.whychoose');
+        $bannerimage=bannerimage::all();
+        return view('user.whychoose',compact('bannerimage'));
     }
     public function portfolio(){
-        return view('user.portfolio');
+        $bannerimage=bannerimage::all();
+        return view('user.portfolio',compact('bannerimage'));
     }
     public function portfoliodetails(){
-        return view('user.portfoliodetails');
+        $bannerimage=bannerimage::all();
+        return view('user.portfoliodetails',compact('bannerimage'));
     }
     public function news(){
-        return view('user.news');
+        $bannerimage=bannerimage::all();
+        return view('user.news',compact('bannerimage'));
     }
     public function newsdetails(){
-        return view('user.newsdetails');
+        $bannerimage=bannerimage::all();
+        return view('user.newsdetails',compact('bannerimage'));
     }
     public function ttindex(){
-        return view('user.ttindex');
+        $bannerimage=bannerimage::all();
+        return view('user.ttindex',compact('bannerimage'));
     }
 
 }

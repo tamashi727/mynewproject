@@ -14,40 +14,24 @@
                           <i class="mdi mdi-flag-variant-outline"></i>
                       </span>Introduction
                   </a>
+                  <a href="{{ url('users') }}" class="list-group-item list-group-item-action ">
+                    <span class="mr-2">
+                        <i class="mdi mdi-apps"></i>
+                    </span>View Users Email Lists
+                </a>
 
-                  <a href="setup.html" class="list-group-item list-group-item-action ">
+                  <a href="{{ url('addbannerimage') }}" class="list-group-item list-group-item-action ">
                       <span class="mr-2">
                           <i class="mdi mdi-apps"></i>
-                      </span>Setup
+                      </span>Add Banner Image
                   </a>
+                  <a href="{{ url('showimage') }}" class="list-group-item list-group-item-action ">
+                    <span class="mr-2">
+                        <i class="mdi mdi-apps"></i>
+                    </span>Show And Delete Banner Image
+                </a>
 
-                  <span class="list-group-item disabled">
-                      Customization
-                  </span>
-
-                  <a href="customization.html" class="list-group-item list-group-item-action ">
-                      <span class="mr-2">
-                          <i class="mdi mdi-square-edit-outline"></i>
-                      </span>Layout & Themes
-                  </a>
-
-
-                  <span class="list-group-item disabled">
-                      Other
-                  </span>
-
-                  <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
-                      <span class="mr-2">
-                          <i class="mdi mdi-widgets"></i>
-                      </span>How to use plugins
-                  </a>
-
-                  <a href="changelog.html" class="list-group-item list-group-item-action ">
-                      <span class="mr-2">
-                          <i class="mdi mdi-book-open-page-variant"></i>
-                      </span>Changelog
-                  </a>
-
+                  
               </div>
           </div>
       </div>

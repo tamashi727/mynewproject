@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Mail;
+use App\Models\Detail;
 
 class ContactController extends Controller
 {
@@ -11,17 +12,19 @@ class ContactController extends Controller
         return view('user.contactus');
     }
     public function sendEmail(Request $request){
-        $details=[
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'phone'=>$request->phone,
-            'subject'=>$request->subject,
-            'message'=>$request->message,
-
+        $detail=new Detail();
+        $detail->name=request('name');
+        $detail->email=request('email');
+        $detail->phone=request('phone');
+        $detail->subject=request('subject');
+        $detail->message=request('message');
+        $detail->save();
+        
+        
     
-    ];
 
-    Mail::to('marketing@systemdecoder.com')->send(new ContactMail($details));
+    Mail::to('marketing@systemdecoder.com')->send(new ContactMail($detail));
+         
 
     return back()->with('message_sent','Your message has been sent successfully!');
     }

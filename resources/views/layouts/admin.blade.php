@@ -17,7 +17,10 @@
     <link href="{{ asset('admin/assets/css/app.min.css')}}" rel="stylesheet"  type="text/css" />
 
         
-    
+        <!--style for label of addbannerimage -->
+        <style type="text/css">
+        label {display:inline-block;width:200px;}
+        </style>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}"> 

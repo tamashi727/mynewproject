@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -49,5 +50,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/users',[DashboardController::class,'users']);
 Route::get('/view-users/{id}',[DashboardController::class,'viewusers']);
-
+Route::get('/addbannerimage',[AdminController::class,'addbannerimage']);
+Route::post('/uploadimage',[AdminController::class,'uploadimage']);
+Route::get('/showimage',[AdminController::class,'showimage']);
+Route::get('/deleteimage/{id}',[AdminController::class,'deleteimage']);
 

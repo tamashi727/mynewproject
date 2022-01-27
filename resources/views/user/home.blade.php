@@ -187,7 +187,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
                         <div class="navarea__right">
-                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <a href="{{url('contactus')}}" class="site-btn">Get A Quote <span>+</span></a>
                             <button class="search-trigger">
                                 <i class="fal fa-search"></i>
                             </button>
@@ -200,7 +200,9 @@
     <!-- header end -->
 
     <!-- banner area start -->
+    @foreach($bannerimage as $bannerimages)
     <section class="banner__area pt-135 pb-135 bg_img" data-background="{{asset('assets/images/bg/banner-bg-1.jpg')}}">
+     
         <div class="banner-wrap">
             <div class="container-fluid">
                 <div class="row">
@@ -245,9 +247,10 @@
             </div>
         </div>
         <div class="banner-img">
-            <img src="{{asset('assets/images/banner/banner-1.png')}}" alt="">
+            <img src="bannerimages/{{ $bannerimages->image }}" alt="">
         </div>
     </section>
+    @endforeach  
     <!-- banner area end -->
 
     <!-- service area start -->

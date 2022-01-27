@@ -3,7 +3,7 @@
 </x-app-layout>
 @extends('layouts.admin')
 @section('content')
-<div class="card">
+<div class="card" style="padding-top:50px">
     <div class="card-body">
         <a href="{{ url('users') }}" >Click Here To See Users List
     
