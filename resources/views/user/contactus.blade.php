@@ -90,12 +90,14 @@
             <div class="container-fluid">
                  <div class="row">
                      <div class="col-xl-6 col-lg-7 col-md-12">
+                         @foreach($data as $phone)
                          <div class="header__top--info">
                              <ul>
-                                 <li><a href="mailto:info@webmail.com"><span class="icon"><i class="fal fa-envelope"></i></span> info@webmail.com</a></li>
-                                 <li><a href="tel:9878768648765"><span class="icon"><i class="fal fa-phone"></i></span> +987 876 86 48 765</a></li>
+                                 <li><a href="mailto:{{ $phone->email }}"><span class="icon"><i class="fal fa-envelope"></i></span> {{ $phone->email }}</a></li>
+                                 <li><a href="tel:{{ $phone->phone }}"><span class="icon"><i class="fal fa-phone"></i></span> {{ $phone->phone }}</a></li>
                              </ul>
                          </div>
+                         @endforeach
                      </div>
                      <div class="col-xl-6 col-lg-5 col-md-12">
                         <div class="header__top--info--right">
@@ -297,8 +299,8 @@
                         </div>
                         <div class="content">
                             <h2 class="title">Office Address</h2>
-                            <p>99 NY Address street, Brooklyn, <br>
-                            United State</p>
+                            <p>{{ $phone->address }} <br>
+                             </p>
                         </div>
                     </div>
                 </div>
@@ -310,8 +312,8 @@
                         </div>
                         <div class="content">
                             <h2 class="title">Phone Number</h2>
-                            <a href="tel:87575564647658">875 7556 464 765 8</a>
-                            <a href="tel:76564856798">765 648 567 98</a>
+                            <a href="tel:{{ $phone->phone }}">{{ $phone->phone }}</a>
+                            <a href="tel:675"></a>
                         </div>
                     </div>
                 </div>
@@ -323,8 +325,8 @@
                         </div>
                         <div class="content">
                             <h2 class="title">Web Connect</h2>
-                            <a href="mailto:info@webmail.com">info@webmail.com</a>
-                            <a href="mailto:webexample.com">webexample.com</a>
+                            <a href="mailto:{{ $phone->email }}">{{ $phone->email }}</a>
+                            <a href="mailto:#"></a>
                         </div>
                     </div>
                 </div>
@@ -355,7 +357,7 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Phone Number</h4>
-                                    <a href="tel:98787676576577">+987 876 765 76 577</a>
+                                    <a href="tel:{{ $phone->phone }}">{{ $phone->phone }}</a>
                                 </div>
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
@@ -364,7 +366,7 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Email Address</h4>
-                                    <a href="mailto:info@webmail.com">info@webmail.com</a>
+                                    <a href="mailto:{{ $phone->email }}">{{ $phone->email }}</a>
                                 </div>
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
@@ -373,7 +375,7 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Office Address</h4>
-                                    <span>14/A, Miranda City, NYC</span>
+                                    <span>{{ $phone->address }}</span>
                                 </div>
                             </div>
                         </div>

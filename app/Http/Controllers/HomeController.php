@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Bannerimage;
+use App\Models\Phone;
 
 class HomeController extends Controller
 {
@@ -31,64 +32,65 @@ class HomeController extends Controller
         }
     }
     public function index(){
+        $data=phone::all();
         $bannerimage=bannerimage::all();
-        return view('user.home',compact('bannerimage'));
+        return view('user.home',compact('bannerimage','data'));
     }
     public function indexx(){
-        $bannerimage=bannerimage::all();
-        return view('user.anindex',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.anindex',compact('data'));
     }
     public function about(){
-        $bannerimage=bannerimage::all();
-        return view('user.about',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.about',compact('data'));
     }
     public function career(){
-        $bannerimage=bannerimage::all();
-        return view('user.career',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.career',compact('data'));
     }
     public function services(){
-        $bannerimage=bannerimage::all();
-        return view('user.services',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.services',compact('data'));
     }
     public function servicedetails(){
-        $bannerimage=bannerimage::all();
-        return view('user.servicedetails',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.servicedetails',compact('data'));
     }
     public function faq(){
-        $bannerimage=bannerimage::all();
-        return view('user.faq',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.faq',compact('data'));
     }
     public function team(){
-        $bannerimage=bannerimage::all();
-        return view('user.team',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.team',compact('data'));
     }
     public function teamdetails(){
-        $bannerimage=bannerimage::all();
-        return view('user.teamdetails',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.teamdetails',compact('data'));
     }
     public function whychoose(){
-        $bannerimage=bannerimage::all();
-        return view('user.whychoose',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.whychoose',compact('data'));
     }
     public function portfolio(){
-        $bannerimage=bannerimage::all();
-        return view('user.portfolio',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.portfolio',compact('data'));
     }
     public function portfoliodetails(){
-        $bannerimage=bannerimage::all();
-        return view('user.portfoliodetails',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.portfoliodetails',compact('data'));
     }
     public function news(){
-        $bannerimage=bannerimage::all();
-        return view('user.news',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.news',compact('data'));
     }
     public function newsdetails(){
-        $bannerimage=bannerimage::all();
-        return view('user.newsdetails',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.newsdetails',compact('data'));
     }
     public function ttindex(){
-        $bannerimage=bannerimage::all();
-        return view('user.ttindex',compact('bannerimage'));
+        $data=phone::all();
+        return view('user.ttindex',compact('data'));
     }
 
 }

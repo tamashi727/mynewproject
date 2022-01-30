@@ -30,6 +30,21 @@
                         <i class="mdi mdi-apps"></i>
                     </span>Show And Delete Banner Image
                 </a>
+                  <a href="{{ url('showmessage') }}" class="list-group-item list-group-item-action ">
+                    <span class="mr-2">
+                        <i class="mdi mdi-apps"></i>
+                    </span>Show Messages
+                </a>
+                <a href="{{ url('changephone') }}" class="list-group-item list-group-item-action ">
+                    <span class="mr-2">
+                        <i class="mdi mdi-apps"></i>
+                    </span>Change Office Phone number,Email and Address
+                </a>
+                <a href="{{ url('showphone') }}" class="list-group-item list-group-item-action ">
+                    <span class="mr-2">
+                        <i class="mdi mdi-apps"></i>
+                    </span>Show And Delete Inserted Office Phone number,Email and Address
+                </a>
 
                   
               </div>

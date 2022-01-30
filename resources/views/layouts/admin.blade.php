@@ -39,7 +39,7 @@
         @include('layouts.inc.sidebar')
         
             @include('layouts.inc.adminnav')
-            <div class="container " style="margin-left:280px">
+            <div class="container " style="margin-left:250px;margin-right:200px">
                 @yield('content')
             </div>
             @include('layouts.inc.adminfooter')

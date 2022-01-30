@@ -9,6 +9,15 @@
 
     </div>
     <div class="card-body">
+        @if(session()->has('message'))
+        <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        {{ session()->get('message') }}
+
+
+        </div>
+        @endif
+
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
@@ -17,6 +26,8 @@
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Address</th>
+                    <th>view </th>
+                    <th>Delete</th>
                 </tr>
 
 
@@ -31,6 +42,9 @@
                     <td>{{ $item->address }}</td>
                     <td>
                         <a href="{{ url('view-users/'.$item->id) }}" class="btn btn-primary btn-sm">View</a>
+                    </td>
+                    <td>
+                        <a href="{{ url('deleteusers/'.$item->id) }}" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
                 @endforeach

@@ -5,11 +5,13 @@ use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Mail;
 use App\Models\Detail;
+use App\Models\Phone;
 
 class ContactController extends Controller
 {
     public function contact(){
-        return view('user.contactus');
+        $data=phone::all();
+        return view('user.contactus',compact('data'));
     }
     public function sendEmail(Request $request){
         $detail=new Detail();

@@ -50,8 +50,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/users',[DashboardController::class,'users']);
 Route::get('/view-users/{id}',[DashboardController::class,'viewusers']);
+Route::get('/deleteusers/{id}',[DashboardController::class,'deleteusers']);
 Route::get('/addbannerimage',[AdminController::class,'addbannerimage']);
 Route::post('/uploadimage',[AdminController::class,'uploadimage']);
 Route::get('/showimage',[AdminController::class,'showimage']);
 Route::get('/deleteimage/{id}',[AdminController::class,'deleteimage']);
-
+Route::get('/showmessage',[AdminController::class,'showmessage']);
+Route::get('/deletemessage/{id}',[AdminController::class,'deletemessage']);
+Route::get('/changephone',[AdminController::class,'changephone']);
+Route::post('/uploadphone',[AdminController::class,'uploadphone']);
+Route::get('/showphone',[AdminController::class,'showphone']);
+Route::get('/deletephone/{id}',[AdminController::class,'deletephone']);
