@@ -488,28 +488,34 @@
                                 <div class="icon mr-20">
                                     <img src="{{asset('assets/images/icons/footer-info-icon-1.png')}}" alt="">
                                 </div>
+                                @foreach($data as $phone)
                                 <div class="content">
                                     <h4 class="title">Phone Number</h4>
                                     <a href="tel:{{ $phone->phone }}">{{ $phone->phone }}</a>
                                 </div>
+                                @endforeach
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
                                 <div class="icon mr-20">
                                     <img src="{{asset('assets/images/icons/footer-info-icon-2.png')}}" alt="">
                                 </div>
+                                @foreach($data as $phone)
                                 <div class="content">
                                     <h4 class="title">Email Address</h4>
                                     <a href="mailto:{{ $phone->email }}">{{ $phone->email }}</a>
                                 </div>
+                                @endforeach
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
                                 <div class="icon mr-20">
                                     <img src="{{asset('assets/images/icons/footer-info-icon-3.png')}}" alt="">
                                 </div>
+                                @foreach($data as $phone)
                                 <div class="content">
                                     <h4 class="title">Office Address</h4>
                                     <span>{{ $phone->address }}</span>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                         <button id="scroll-top" class="site-btn transparent"><i class="fal fa-long-arrow-up"></i> <span>Back To Top</span> <i class="fal fa-long-arrow-up"></i></button>
