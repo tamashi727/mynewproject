@@ -15,6 +15,16 @@ class ContactController extends Controller
     }
     public function sendEmail(Request $request){
         $detail=new Detail();
+
+       $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'phone'=>'required',
+            'subject' => 'required|max:100',
+            'message' => 'required|max:255',
+            
+            
+        ]);
         $detail->name=request('name');
         $detail->email=request('email');
         $detail->phone=request('phone');
@@ -30,4 +40,6 @@ class ContactController extends Controller
 
     return back()->with('message_sent','Your message has been sent successfully!');
     }
+    
+    
 }

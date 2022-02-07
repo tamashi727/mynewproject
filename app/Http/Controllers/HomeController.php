@@ -16,8 +16,9 @@ class HomeController extends Controller
         if(Auth::id()){
             if(Auth::user()->usertype=='0')
             {
+                $data=phone::all();
                 $bannerimage=bannerimage::all();
-                return view('user.home',compact('bannerimage'));
+                return view('user.home',compact('bannerimage','data'));
 
             }
             else

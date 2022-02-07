@@ -245,30 +245,53 @@
                                                 <div class="form__group">
                                                     <label for="name"><i class="fal fa-user"></i></label>
                                                     <input name="name" type="text" id="name" placeholder="Enter your full name">
+                                                    @if($errors->first('name'))
+                                                    <div class="alert-danger">{{ $errors->first('name') }}
+                                                    </div>
+                                                    @endif
+
+                                                       
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 mt-30">
                                                 <div class="form__group">
                                                     <label for="email"><i class="fal fa-envelope"></i></label>
                                                     <input name="email" type="email" id="email" placeholder="Enter email address">
+                                                    @if($errors->first('email'))
+                                                    <div class="alert-danger">{{ $errors->first('email') }}
+                                                    </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 mt-30">
                                                 <div class="form__group">
                                                     <label for="tel"><i class="fal fa-phone"></i></label>
                                                     <input name="phone" type="tel" id="tel" placeholder="Add phone number">
+                                                    @if($errors->first('phone'))
+                                                    <div class="alert-danger">{{ $errors->first('phone') }}
+                                                    </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 mt-30">
                                                 <div class="form__group">
                                                     <label for="subject"><i class="fal fa-book"></i></label>
                                                     <input name="subject" type="text" id="subject" placeholder="Enter your subject">
+                                                    @if($errors->first('subject'))
+                                                    <div class="alert-danger">{{ $errors->first('subject') }}
+                                                    </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 mt-30">
                                                 <div class="form__group">
                                                     <label for="message"><i class="fal fa-pen"></i></label>
                                                     <textarea name="message" id="message" placeholder="Enter messages"></textarea>
+                                                    @if($errors->first('message'))
+                                                    <div class="alert-danger">{{ $errors->first('message') }}
+                                                    </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 mt-30 text-center">
